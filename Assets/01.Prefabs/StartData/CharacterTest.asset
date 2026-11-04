@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e62b25d2fb5da4d84103423fb780d6, type: 3}
+  m_Name: CharacterTest
+  m_EditorClassIdentifier: Definitions::SERES.Definitions.StatsDefinitionObject
+  statsDefinition:
+    health: 100
+    mentalHealth: 100
+    healthContainer:
+      thirst: 0
+      thirstDelay:
+      - delay: 5
+        startHour: 0
+        startMinute: 0
+        endHour: 5
+        endMinute: 30
+      - delay: 50
+        startHour: 5
+        startMinute: 30
+        endHour: 8
+        endMinute: 0
+      - delay: 5
+        startHour: 8
+        startMinute: 0
+        endHour: 11
+        endMinute: 0
+      hunger: 0
+      oxygen: 100
+      force: 5
+      stamina: 5
+    mentalHealthContainer:
+      humanInteraction: 20
+      affectivity: 5
+      stress: 0
+      fear: 0
+      fun: 25
+      affectivityContainer:
+        love: 0
+        confidence: 0
+        security: 0
+        complicity: 0
+    commonStatsContainer:
+      disease: 0
+      energy: 80
+      personalCare: 0
+      diseaseContainer:
+        warmth: 25
+        cold: 0
+        pathology: 0
+        dizziness: 0
+      personalCareContainer:
+        tastes: 10
+        cleanliness: 100
+        physiologicalNeeds: 0
