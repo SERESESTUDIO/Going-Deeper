@@ -18,25 +18,51 @@ MonoBehaviour:
     healthContainer:
       thirst: 0
       thirstDelay:
+      - delay: 10
+        startHour: 0
+        startMinute: 0
+        endHour: 10
+        endMinute: 0
+      - delay: 50
+        startHour: 10
+        startMinute: 0
+        endHour: 16
+        endMinute: 0
       - delay: 5
+        startHour: 16
+        startMinute: 0
+        endHour: 23
+        endMinute: 0
+      hunger: 0
+      hungerDelay:
+      - delay: 2
         startHour: 0
         startMinute: 0
         endHour: 5
-        endMinute: 30
-      - delay: 50
+        endMinute: 0
+      - delay: 15
         startHour: 5
-        startMinute: 30
-        endHour: 8
-        endMinute: 0
-      - delay: 5
-        startHour: 8
         startMinute: 0
-        endHour: 11
+        endHour: 10
         endMinute: 0
-      hunger: 0
+      - delay: 2
+        startHour: 10
+        startMinute: 0
+        endHour: 16
+        endMinute: 0
+      - delay: 20
+        startHour: 16
+        startMinute: 0
+        endHour: 20
+        endMinute: 0
+      - delay: 2
+        startHour: 20
+        startMinute: 0
+        endHour: 23
+        endMinute: 59
       oxygen: 100
       force: 5
-      stamina: 5
+      stamina: 100
     mentalHealthContainer:
       humanInteraction: 20
       affectivity: 5
@@ -50,12 +76,26 @@ MonoBehaviour:
         complicity: 0
     commonStatsContainer:
       disease: 0
-      energy: 80
+      energy: 100
+      energyDelay:
+      - delay: 30
+        startHour: 0
+        startMinute: 0
+        endHour: 5
+        endMinute: 0
+      - delay: 10
+        startHour: 5
+        startMinute: 0
+        endHour: 21
+        endMinute: 0
+      - delay: 30
+        startHour: 21
+        startMinute: 0
+        endHour: 23
+        endMinute: 59
       personalCare: 0
       diseaseContainer:
-        warmth: 25
-        cold: 0
-        pathology: 0
+        pathology: []
         dizziness: 0
       personalCareContainer:
         tastes: 10

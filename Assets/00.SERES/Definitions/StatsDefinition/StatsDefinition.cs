@@ -22,6 +22,7 @@ namespace SERES.Definitions
         public StatDelayByTimeDefinition[] thirstDelay;
         [Range(0, 100)]
         public float hunger;
+        public StatDelayByTimeDefinition[] hungerDelay;
         [Range(0, 100)]
         public float oxygen;
         [Range(0, 100)]
@@ -66,6 +67,7 @@ namespace SERES.Definitions
         public float disease;
         [Range(0, 100)]
         public float energy;
+        public StatDelayByTimeDefinition[] energyDelay;
         [Range(0, 100)]
         public float personalCare;
 
@@ -76,12 +78,7 @@ namespace SERES.Definitions
     [Serializable]
     public class DiseaseDefinitionContainer
     {
-        [Range(0, 100)]
-        public float warmth;
-        [Range(0, 100)]
-        public float cold;
-
-        public DiseaseDefinition.DiseaseType pathology;
+        public DiseaseDefinition[] pathology;
         [Range(0, 100)]
         public float dizziness;
     }

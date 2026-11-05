@@ -40,5 +40,10 @@ namespace SERES.Systems.TimeSystem
         {
             return _timeScale;
         }
+
+        public string GetDate()
+        {
+            return _date;
+        }
     }
 }

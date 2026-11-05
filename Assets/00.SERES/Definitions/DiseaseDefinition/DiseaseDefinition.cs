@@ -1,15 +1,12 @@
+using UnityEngine;
+
 namespace SERES.Definitions
 {
-    public class DiseaseDefinition
+    [CreateAssetMenu(fileName = "DiseaseDefinition", menuName = "SERES/Definitions/DiseaseDefinition", order = 2)]
+    public class DiseaseDefinition : ScriptableObject
     {
-        public enum DiseaseType
-        {
-            None,
-            Cold,
-            Flu,
-            Fever,
-            Infection,
-            Poisoning
-        }
+        public string DiseaseName;
+        [Range(0, 100)]
+        public float diseaseValue;
     }
 }
