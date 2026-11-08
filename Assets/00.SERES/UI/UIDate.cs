@@ -6,11 +6,11 @@ namespace SERES.UI
     class UIDate : MonoBehaviour
     {
         public TMP_Text dateText;
-        public TimeManager TimeManager;
+        public ExternalDataCore dataCore;
 
         private void Update()
         {
-            dateText.text = TimeManager.GetDate();
+            if(dataCore.GetTimeManager()) dateText.text = dataCore.GetTimeManager().GetDate();
         }
     }
 }

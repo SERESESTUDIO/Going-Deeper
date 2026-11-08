@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6554690727312029554}
+  - component: {fileID: 6516437892747362962}
   m_Layer: 0
   m_Name: Core
   m_TagString: Untagged
@@ -34,6 +35,18 @@ Transform:
   - {fileID: 8267013000701165730}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6516437892747362962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010650339539254780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0eed62cbe16b9488b67bd1b76fa74d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Systems::SERES.Systems.DetectCore
 --- !u!1 &3956936057524346152
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,6 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Systems::SERES.Systems.StatsSystem.StatsManager
   timeManager: {fileID: 9079393037420361906}
   startStats: {fileID: 11400000, guid: 6904e09ce556deb4781f2eac5e264852, type: 2}
+  consumeStatsDefinition: {fileID: 11400000, guid: 25b89484867a164478e3a9f614bbc32a, type: 2}
   _statsDefinitions:
     health: 0
     mentalHealth: 0
@@ -87,6 +101,7 @@ MonoBehaviour:
       thirst: 0
       thirstDelay: []
       hunger: 0
+      hungerDelay: []
       oxygen: 0
       force: 0
       stamina: 0
@@ -104,16 +119,16 @@ MonoBehaviour:
     commonStatsContainer:
       disease: 0
       energy: 0
+      energyDelay: []
       personalCare: 0
       diseaseContainer:
-        warmth: 0
-        cold: 0
-        pathology: 0
+        pathology: []
         dizziness: 0
       personalCareContainer:
         tastes: 0
         cleanliness: 0
         physiologicalNeeds: 0
+  _energyIndex: 0
 --- !u!1 &6675164757033503247
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e2ed16113086944a33a4a382d51463, type: 3}
+  m_Name: ConsumeStatsDefinition
+  m_EditorClassIdentifier: Definitions::SERES.Definitions.ConsumeStatsDefinition
+  health: 0.1
+  mentalHealth: 0.05
+  thirst: 0.001
+  hunger: 0.001
+  oxygen: 0.1
+  force: 0.0006
+  humanInteraction: 0.01
+  fun: 0.01
+  love: 0.001
+  confidence: 0.001
+  security: 0.001
+  complicity: 0.001
+  disease: 0.1
+  energy: 0.001
+  personalCare: 0.1
+  dizziness: 0.1
+  tastes: 0.01
+  cleanliness: 0.02
+  phisiologycalNeeds: 0.01

@@ -64,16 +64,16 @@ MonoBehaviour:
       force: 5
       stamina: 100
     mentalHealthContainer:
-      humanInteraction: 20
-      affectivity: 5
+      humanInteraction: 100
+      affectivity: 100
       stress: 0
       fear: 0
-      fun: 25
+      fun: 30
       affectivityContainer:
-        love: 0
-        confidence: 0
-        security: 0
-        complicity: 0
+        love: 30
+        confidence: 30
+        security: 30
+        complicity: 30
     commonStatsContainer:
       disease: 0
       energy: 100
@@ -93,11 +93,11 @@ MonoBehaviour:
         startMinute: 0
         endHour: 23
         endMinute: 59
-      personalCare: 0
+      personalCare: 100
       diseaseContainer:
         pathology: []
         dizziness: 0
       personalCareContainer:
-        tastes: 10
+        tastes: 100
         cleanliness: 100
         physiologicalNeeds: 0

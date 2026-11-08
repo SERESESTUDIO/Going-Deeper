@@ -4,7 +4,7 @@ namespace SERES.Systems.PhaseSystem
     public class PhaseManager : MonoBehaviour
     {
         private static PhaseMode _phaseMode;
-        public enum PhaseMode { GamePlay, Pause }
+        public enum PhaseMode { GamePlay, Pause, GameOver }
         private void Update()
         {
             switch (_phaseMode)
